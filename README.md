@@ -1,0 +1,2 @@
+# Lámpagyújtogató
+Befejezetlen projekt
