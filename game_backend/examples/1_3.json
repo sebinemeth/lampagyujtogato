@@ -1,0 +1,85 @@
+{
+    "points": [
+        {
+            "id": "a",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "id": "b",
+            "x": 2,
+            "y": 1
+        }
+    ],
+    "rows": [
+        [
+            {
+                "type": "wire",
+                "io": 6
+            },
+            {
+                "type": "bulb",
+                "rotate": 270,
+                "value": 3
+            },
+            {
+                "type": "wire",
+                "io": 3
+            }
+        ],
+        [
+            {
+                "type": "wire",
+                "io": 10
+            },
+            {},
+            {
+                "type": "wire",
+                "io": 10
+            }
+        ],
+        [
+            {
+                "type": "wire",
+                "io": 12
+            },
+            {
+                "type": "task"
+            },
+            {
+                "type": "wire",
+                "io": 9
+            }
+        ]
+    ],
+    "options": [
+        {
+            "type": "v_source",
+            "value": 3,
+            "rotate": 270
+        },
+        {
+            "type": "resistor",
+            "value": 3,
+            "rotate": 90
+        },
+        {
+            "type": "v_source",
+            "value": 9,
+            "rotate": 270
+        },
+        {
+            "type": "v_source",
+            "value": 18,
+            "rotate": 270
+        }
+    ],
+    "conditions": [
+        {
+            "type": "i",
+            "x": 1,
+            "y": 0,
+            "value": 3
+        }
+    ]
+}

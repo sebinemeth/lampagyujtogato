@@ -1,0 +1,166 @@
+{
+    "points": [
+        {
+            "id": "a",
+            "x": 3,
+            "y": 1
+        },
+        {
+            "id": "b",
+            "x": 0,
+            "y": 3
+        },
+        {
+            "id": "c",
+            "x": 2,
+            "y": 3
+        }
+    ],
+    "rows": [
+        [
+            {},
+            {
+                "type": "wire",
+                "io": 6
+            },
+            {
+                "type": "resistor",
+                "rotate": 270,
+                "value": 2.5
+            },
+            {
+                "type": "wire",
+                "io": 3
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "type": "wire",
+                "io": 6
+            },
+            {
+                "type": "wire",
+                "io": 11
+            },
+            {},
+            {
+                "type": "wire",
+                "io": 14
+            },
+            {
+                "type": "task"
+            },
+            {
+                "type": "wire",
+                "io": 3
+            }
+        ],
+        [
+            {
+                "type": "wire",
+                "io": 10
+            },
+            {
+                "type": "wire",
+                "io": 12
+            },
+            {
+                "type": "resistor",
+                "rotate": 270,
+                "value": 10
+            },
+            {
+                "type": "wire",
+                "io": 9
+            },
+            {},
+            {
+                "type": "wire",
+                "io": 10
+            }
+        ],
+        [
+            {
+                "type": "wire",
+                "io": 14
+            },
+            {
+                "type": "bulb",
+                "rotate": 270,
+                "value": 5
+            },
+            {
+                "type": "wire",
+                "io": 7
+            },
+            {
+                "type": "resistor",
+                "rotate": 90,
+                "value": 3
+            },
+            {
+                "type": "wire",
+                "io": 5
+            },
+            {
+                "type": "wire",
+                "io": 9
+            }
+        ],
+        [
+            {
+                "type": "wire",
+                "io": 12
+            },
+            {
+                "type": "resistor",
+                "rotate": 270,
+                "value": 15
+            },
+            {
+                "type": "wire",
+                "io": 9
+            },
+            {},
+            {},
+            {}
+        ]
+    ],
+    "options": [
+        {
+            "type": "v_source",
+            "value": 12,
+            "rotate": 270
+        },
+        {
+            "type": "v_source",
+            "value": 15,
+            "rotate": 270
+        },
+        {
+            "type": "v_source",
+            "value": 17.5,
+            "rotate": 270
+        },
+        {
+            "type": "v_source",
+            "value": 17.5,
+            "rotate": 90
+        },
+        {
+            "type": "v_source",
+            "value": 20,
+            "rotate": 270
+        }
+    ],
+    "conditions": [
+        {
+            "type": "v",
+            "x": 1,
+            "y": 3,
+            "value": 7.5
+        }
+    ]
+}

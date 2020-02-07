@@ -1,0 +1,29 @@
+{
+    "title": "Bevezet\u0151 elm\u00e9let",
+    "body": [
+        {
+            "type": "p",
+            "content": "Ebben a j\u00e1t\u00e9kban hi\u00e1nyos \u00e1ramk\u00f6r\u00f6ket kell kieg\u00e9sz\u00edteni a megadott lehet\u0151s\u00e9gek k\u00f6z\u00fcl v\u00e1lasztva. A c\u00e9l, hogy az \u00e1ramk\u00f6rben l\u00e9v\u0151 l\u00e1mpa, vagy l\u00e1mp\u00e1k a szint\u00e9n megadott param\u00e9terekkel rendelkezzen (megfelel\u0151 \u00e1ramer\u0151ss\u00e9g, vagy fesz\u00fclts\u00e9g)."
+        },
+        {
+            "type": "p",
+            "content": "Amikkel tal\u00e1lkozhatsz eleinte:"
+        },
+        {
+            "type": "p",
+            "content": "<img src='graphical_components\/wire.svg' style='width:2em;'>ide\u00e1lis vezet\u00e9k"
+        },
+        {
+            "type": "p",
+            "content": "<img src='graphical_components\/resistor.svg' style='width:2em;'>ellen\u00e1ll\u00e1s"
+        },
+        {
+            "type": "p",
+            "content": "<img src='graphical_components\/v_source.svg' style='width:2em;'>telep"
+        },
+        {
+            "type": "p",
+            "content": "<img src='graphical_components\/bulb.svg' style='width:2em;'>l\u00e1mpa"
+        }
+    ]
+}

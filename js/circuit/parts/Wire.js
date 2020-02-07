@@ -1,0 +1,1 @@
+class Wire extends Part {}

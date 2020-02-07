@@ -1,0 +1,397 @@
+:root {
+    --pv_kek: #377ABB;
+    --pv_kek_dark: #355677;
+    --pv_grey: #333333;
+    --error_red: #FF6633;
+    --success_green: #39B44A;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--pv_grey);
+    font-family: "Titillium Web", sans-serif;
+}
+button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    min-width: 45px;
+    margin: 2.5 px;
+    background-color: #eeeeee;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: bold;
+    outline: none;
+    color: var(--pv_grey);
+}
+button:hover {
+    background-color: silver;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: var(--pv_kek_dark);
+    padding: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 3px var(--pv_grey);
+    box-shadow: 0px 0px 10px black;
+}
+header {
+    background-color: var(--pv_kek);
+    min-height: 75px;
+    color: white;
+    padding: 5px 0px;
+    display: table;
+    width: 100%;
+}
+.mainTitle, .secondaryTitle {
+    margin: 5px;
+    text-align: center; 
+    margin: 5px;
+    font-weight: 100;
+    line-height: 1.3em;
+}
+.homeButtonDiv {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+}
+.titleDiv {
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
+}
+.userInfo {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+    text-align: right;
+}
+.userButton {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.userButton:hover {
+    background-color: var(--pv_kek_dark);
+}
+.homeButton {
+    margin: 10px;
+}
+
+.levelSelector {
+    height: 475px;
+    padding: 20px;
+}
+.statDiv {
+    height: 475px;
+}
+.statContent {
+    padding: 20px;
+}
+.statTitle {
+    text-align: center;
+    font-weight: 100;
+    line-height: 50px;
+    background-color: #eeeeee;
+    margin: 0px;
+}
+.statPointLabel {
+    text-align: center;
+}
+.statPoint {
+    text-align: center;
+    font-size: 40px;
+}
+.backButtonDiv {
+    padding: 5px;
+}
+.lessonDiv, .exampleDiv {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+.lessonDiv:hover, .exampleDiv:hover {
+    background-color: silver;
+}
+.lessonDiv.locked, .exampleDiv.locked {
+    background-color: #eeeeee;
+    color: rgba(0,0,0,0);
+    cursor: auto;
+}
+.lessonDiv.locked::before, .exampleDiv.locked::before {
+    position: absolute;
+    background-image: url('../img/lock.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 35px 35px 35px -15px;
+    content:"";
+}
+.lessonNumber {
+    margin-top: 5px;
+    font-size: 2em;
+}
+.exampleNumber {
+    margin-top: 5px;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+.lessonTitle, .exampleTitle {
+    line-height: 1.1em;
+    padding: 0px 4px;
+}
+.exampleRating {
+    text-align: center;
+}
+.exampleRating img {
+    width: 20px;
+    margin: 4px 2px;
+}
+
+
+.gameArea {
+    min-height: 550px;
+    display: table;
+    width: 100%;
+}
+.leftDiv, .rightDiv {
+    display: table-cell;
+    vertical-align: top;
+    padding: 2.5%;
+}
+.leftDiv {
+    width: 65%;
+}
+.rightDiv {
+    width: 25%;
+}
+.drawing, .components, .levelSelector, .statDiv {
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.drawing {
+    min-height: 475px;
+    padding: 5px;
+}
+.components {
+    height: 400px;
+    padding: 5px;
+}
+.gameInfo {
+    position: absolute;
+    width: 150px;
+    min-height: 50px;
+    border: solid 3px grey;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.time {
+    text-align: center;
+    font-size: 1.5em;
+}
+.gameRating {
+    width: 150px;
+    height: 50px;
+    border-top: solid 3px grey;
+}
+.gameRating::before {
+    content: url(../img/starloader.svg);
+    position: absolute;
+    width: 150px;
+    height: 50px;
+}
+.loadingBar {
+    width: 150px;
+    height: 50px;
+    background-color: #FFD504;
+}
+
+
+
+.drawingTable {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: 100px auto;
+}
+.circuitPictureCell {
+    padding: 0px;
+}
+.circuitPictureCell.bulb.lit {
+    background: radial-gradient(rgba(255,204,0,1), rgba(255,255,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0));
+}
+.taskDropper {
+    //box-shadow: 0px 0px 10px inset rgba(0,0,0,0.5);
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+.taskDropper.ui-droppable-active {
+    box-shadow: 0px 0px 10px inset #39B44A;
+}
+.taskDropper.ui-droppable-disabled {
+    box-shadow: 0px 0px 10px inset red;
+}
+.taskDropper.ui-droppable-hover {
+    background-color: lightgreen;
+}
+.tdImage {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    float: left;
+    padding: 0px;
+    background-size: cover;
+}
+.elemValue {
+    position: absolute;
+    font-size: 0.8em;
+    margin-top: 57px;
+    width: 75px;
+    //background-color: rgba(255,255,255,0.8);
+    text-align: center;
+}
+.components .elemValue {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0px auto;
+    top: -17.5px;
+}
+.resistor .elemValue::after, .bulb .elemValue::after {
+    content: " Ω";
+}
+.v_source .elemValue::after {
+    content: " V";
+}
+.condition {
+    position: absolute;
+    transform: auto;
+    width: 75px;
+    color: red;
+}
+.condition.dir4::before {
+    content: url(../graphical_components/dir.svg);
+    position: absolute;
+    width: 75px;
+}
+.conditionValue {
+    font-size: 0.8em;
+    text-align: center;
+}
+.conditionValue.v::after {
+    content: " V";
+}
+.conditionValue.i::after {
+    content: " A";
+}
+
+.dragger {
+    display: inline-block;
+    cursor: move;
+}
+.dragger.ui-draggable-dragging {
+    z-index: 10000;
+}
+.components.ui-droppable-active {
+    box-shadow: 0px 0px 10px inset #39B44A;
+}
+.components.ui-droppable-hover {
+    background-color: lightgreen;
+}
+.components .dragger {
+    margin: 10px;
+}
+.option {
+    float: left;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+
+.navigation {
+    padding: 10px 0px;
+    text-align: center;
+}
+.navButton {
+    background-color: transparent;
+}
+.navButton:hover {
+    //background: radial-gradient(rgba(255,204,0,1), rgba(255,255,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0));
+    background: radial-gradient(var(--pv_kek), var(--pv_kek), rgba(0,0,0,0), rgba(0,0,0,0));
+    //background-color: var(--pv_kek);
+}
+.navButton img {
+    height: 3.5em;
+    vertical-align: middle;
+}
+
+
+.alertFader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.alertBox {
+    width: 500px;
+    margin: 100px auto;
+    border: solid 3px var(--pv_grey);
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.alertTitle {
+    padding: 15px;
+    margin: 0px;
+    background-color: var(--pv_kek);
+    color: white;
+    font-weight: 100;
+}
+.error .alertTitle {
+    background-color: var(--error_red);
+    //border-bottom: solid 5px var(--error_red);
+}
+.success .alertTitle {
+    background-color: var(--success_green);
+    //border-bottom: solid 5px var(--success_green);
+}
+.alertBody, .alertButtons {
+    padding: 15px;
+}
+.alertButton {
+    margin-right: 10px;
+}
+.alertBox img {
+    vertical-align: middle;
+}
+math {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer {
+    background-color: #377ABB;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
+}
